@@ -5,7 +5,7 @@
     "require": {
         "php": ">=5.3.0",
         "laravel/framework": "4.*|5.0.*",
-        "johnny/logger": "dev-master"
+        "johnny/tools": "dev-master"
     },
     "license": "MIT",
     "authors": [
