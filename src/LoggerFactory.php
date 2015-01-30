@@ -7,6 +7,7 @@
  */
 use Monolog\Logger as MonologLogger;
 use Monolog\Handler\StreamHandler;
+use Johnny\Tools\Directory;
 class LoggerFactory
 {
     /**
@@ -61,6 +62,8 @@ class LoggerFactory
         $config = $this->getConfig();
         $file   = $config['logs'][$name];
         $path   = $config['root'].DIRECTORY_SEPARATOR.$file;
+
+        Directory::mkdir(dirname($path));
 
         $logger = new MonologLogger($name);
         $logger->pushHandler(new StreamHandler($path));

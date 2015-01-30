@@ -11,7 +11,8 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "laravel/framework": "4.*|5.0.*"
+        "laravel/framework": "4.*|5.0.*",
+        "johnny/tools": "dev-master"
     },
     "autoload": {
         "psr-4": {
