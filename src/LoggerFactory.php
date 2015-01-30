@@ -60,7 +60,7 @@ class LoggerFactory
     {
         $config = $this->getConfig();
         $file   = $config['logs'][$name];
-        $path   = $config['root'].'/'.$file;
+        $path   = $config['root'].DIRECTORY_SEPARATOR.$file;
 
         $logger = new MonologLogger($name);
         $logger->pushHandler(new StreamHandler($path));
