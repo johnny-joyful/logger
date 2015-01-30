@@ -11,12 +11,13 @@
     "authors": [
         {
             "name": "Johnny",
-            "email": "johnny@anvo.com"
+            "email": "johnny.joyful@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
             "Johnny\\Logger\\": "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
