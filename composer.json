@@ -18,6 +18,5 @@
         "psr-4": {
             "Johnny\\Logger\\": "src/"
         }
-    },
-    "minimum-stability": "dev"
+    }
 }
